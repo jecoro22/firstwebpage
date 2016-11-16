@@ -1,30 +1,199 @@
+/* --- GENERAL --- */
+
 body {
-    background-image: linear-gradient(to bottom right, white, floralwhite);
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2;
+	font-size: 1em;
+	line-height: 1.5em;
+    padding-top: 80px;
+}
+ 
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: left;
+	font-weight: 300;
 }
 
-#nav {
-    /*position*/
-    height:100px;
-    background-color: cornsilk;
-    border: 2px solid black;
+p {
+	margin: 0 0 1.5em 0;
+}
+ 
+img {
+	max-width: 100%;
+	height: auto;
 }
 
-.nav2{
-    height:100px;
-    width:100px;
-    text-align:center;
-    float:left;
-    line-height:100px;
+/* --- HEADER --- */
+
+#main-header {
+	background: white;
+	/*color: white;*/
+	height: 67px;
+    border-bottom: 1px solid yellowgreen;
+    right: 0; /* or width: 100%*/
+	left: 0;
+	top: 0;
+	position: fixed;
 }
 
-.navLink:link {
+#main-header a {
+    text-decoration: none;
+}
+
+#logo-header {
+	float: left;
+    padding: 0 20px;
+    font-size: 26px;
+    /*display: block;*/
+    font-family: 'Lobster', cursive;
+    color: yellowgreen;
+    line-height: 67px;
+}
+
+#logo-header:hover {
+	font-size: 26.16px;
+}
+
+	/*
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}*/
+
+nav {
+	float: right;
+    /*padding-right: 10px;*/
+}
+	
+    nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 67px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+                color: black;
+                font-size: 16px;
+                font-family: 'Bree Serif', serif;
+			}
+			
+				nav ul li a:hover {
+					background: yellowgreen;
+				}
+
+/* --- CONTENT --- */
+
+main {
+	background: white;
+	width: 90%;
+	max-width: 888px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+ 
+	main article {
+		padding: 20px;
+	}
+
+/* --- FOOTER --- */
+
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
+
+/*
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 1px solid yellowgreen;
+}
+
+.navbar-logo {
+    float: left;
+    margin-left: 30px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.navbar-logo a:link {
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    color: yellowgreen;
+}
+
+.navbar-logo a:visited {
+    color: yellowgreen;
+}
+
+.navbar-logo a:hover {
+    font-size: 25.2px;
+}
+
+.navbar-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    float: right;
+    line-height: 4;
+    font-size: 16.4px;
+    font-family: 'Bree Serif', serif;
+}
+
+.navbar-item a:link, .navbar-item a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-item:hover {
+    background-color: yellowgreen;
+}
+
+.navbar-item a:hover {
+    color: white;
+}
+
+.navbar-listitem:link {
     text-decoration: none;
     color: black;
     font-size: 1.3em;
-}
-
-.navLink:visited {
-    color: black;
 }
 
 .navLink:hover{
@@ -33,4 +202,4 @@ body {
 
 main{
     margin: 30px;
-}
+}*/
