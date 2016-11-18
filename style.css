@@ -4,17 +4,17 @@ body{ }
 .button{ }
 
 /* Rules for tablets and bigger viewports */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     
 }
 
 /* Rules for laptops, small desktop screens and bigger viewports */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     
 }
 
 /* Rules for larger desktop screens only */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     
 }
 
@@ -66,7 +66,7 @@ main #main-content {
     padding: 25px 30px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     body {
         background: #f2f2f2;
     }
@@ -161,7 +161,7 @@ nav ul {
 }
 
 /* Rules for tablets and bigger viewports */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     
     #hamburger-menu {
         display: none;
