@@ -15,16 +15,16 @@ h1 {
     font-family: 'Roboto', Arial, sans-serif;
 	font-size: 2.3em;
 	line-height: 1.2em;
-	margin: 10px 0;
+    margin: 0;
 	text-align: left;
 	font-weight: 300;
 }
 
+/*
+
 p {
-	margin: 0 0 1em 0; 
 }
 
-/*
 img {
 	max-width: 100%;
 	height: auto;
@@ -50,7 +50,7 @@ img {
 
 #logo-header {
 	float: left;
-    padding: 0 23px;
+    margin-left: 30px;
     font-size: 26px;
     /*display: block;*/
     font-family: 'Lobster', cursive;
@@ -63,19 +63,19 @@ img {
 	font-size: 26.16px;
 }
 
-	/*
-	#logo-header .site-name {
-		display: block;
-		font-weight: 700;
-		font-size: 1.2em;
-	}
-	
-	#logo-header .site-desc {
-		display: block;
-		font-weight: 300;
-		font-size: 0.8em;
-		color: #999;
-	}*/
+/*
+#logo-header .site-name {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#logo-header .site-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #999;
+}*/
 
 nav {
 	float: right;
@@ -83,31 +83,31 @@ nav {
     /*padding-right: 10px;*/
 }
 	
-    nav ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	
-		nav ul li {
-			display: inline-block;
-            margin: 0px 0px;
-            line-height: 67px;
-		}
-			
-			nav ul li a {
-				display: block;
-				padding: 0 10px;
-				text-decoration: none;
-                color: dimgrey;
-                font-size: 16px;
-                font-family: 'Bree Serif', serif;
-			}
-			
-				nav ul li a:hover {
-					background: yellowgreen;
-                    color: white;
-				}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 0px;
+    line-height: 67px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: dimgrey;
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+}
+
+nav ul li a:hover {
+    background: yellowgreen;
+    color: white;
+}
 
 nav ul li #navbar-item-selected {
     background: yellowgreen;
@@ -119,14 +119,14 @@ nav ul li #navbar-item-selected {
 main {
 	background: white;
 	width: 90%;
-	max-width: 1000px;
-	margin: 0 auto;
+	max-width: 918px;
+	margin: 0px auto;
 	box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
- 
-	main article {
-		padding: 20px;
-	}
+
+main #main-content {
+    padding: 25px 30px;
+}
 
 /* --- FOOTER --- */
 
@@ -137,13 +137,22 @@ main {
 	padding: 10px;
     margin: 0;
 }
-	#main-footer p {
-		margin: 0;
-	}
-	
-	#main-footer a {
-		color: white;
-	}
+
+#main-footer p {
+    margin: 0;
+}
+
+#main-footer a {
+    color: white;
+}
+
+#prueba {
+    font-size: 200px;
+    /*display: block;*/
+    font-family: 'Lobster', cursive;
+    color: yellowgreen;
+    padding: 180px;
+}
 
 /*
 .navbar {
