@@ -57,13 +57,17 @@ p {
 }
 
 img {
-	max-width: 100%;
+	width: auto;
 	height: auto;
     margin: 0 0 0.5em 0;
 }
 
 main #main-content {
     padding: 25px 30px;
+}
+
+main {
+    padding-bottom: 34px;
 }
 
 @media screen and (min-width: 768px) {
@@ -217,11 +221,10 @@ nav ul {
 	background: #333;
 	color: white;
 	text-align: center;
-	padding: 6px;
-    margin: 0;
 }
 
 #main-footer p {
+    line-height: 34px;
     margin: 0;
 }
 
