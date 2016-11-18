@@ -231,11 +231,3 @@ nav ul {
 #main-footer a {
     color: white;
 }
-
-#logo-test {
-    font-size: 200px;
-    /*display: block;*/
-    font-family: 'Lobster', cursive;
-    color: yellowgreen;
-    padding: 180px;
-}
