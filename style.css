@@ -1,11 +1,32 @@
-/* --- GENERAL --- */
+/* General CSS rules for every viewport, including smartphones */
+body{ }
+.title{ }
+.button{ }
+
+/* Rules for tablets and bigger viewports */
+@media (min-width: 768px) {
+    
+}
+
+/* Rules for laptops, small desktop screens and bigger viewports */
+@media (min-width: 992px) {
+    
+}
+
+/* Rules for larger desktop screens only */
+@media (min-width: 1200px) {
+    
+}
+
+/* --- GENERAL & CONTENT --- */
+
+/*☰*/
 
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', Arial, sans-serif;
 	color: #333;
-	background: #f2f2f2;
 	font-size: 1em;
 	line-height: 1.5em;
     padding-top: 67px;
@@ -15,33 +36,85 @@ h1 {
     font-family: 'Roboto', Arial, sans-serif;
 	font-size: 2.3em;
 	line-height: 1.2em;
-    margin: 0;
-	text-align: left;
+    margin: 0 0 0.5em 0;
 	font-weight: 300;
 }
 
-/*
+h2 {
+    font-family: 'Roboto', Arial, sans-serif;
+	font-size: 1.6em;
+	line-height: 1.1em;
+    margin: 0 0 0.5em 0;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin: 0 0 0.5em 0;
+}
 
 p {
+    margin: 0 0 0.5em 0;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
+    margin: 0 0 0.5em 0;
 }
-*/
+
+main #main-content {
+    padding: 25px 30px;
+}
+
+@media (min-width: 768px) {
+    body {
+        background: #f2f2f2;
+    }
+    
+    main {
+        background: white;
+        width: 90%;
+        max-width: 918px;
+        margin: 0px auto;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+    }
+
+    main #main-content {
+        padding: 25px 30px;
+    }
+}
+
+#menuList {
+    list-style: none;
+    text-align: center;
+}
+
+#menuList li {
+    margin: 30;
+    padding: 17px;
+    border-bottom: 1px solid dimgrey;
+}
+
+#menuList li a {
+    margin: 0px 0px;
+    text-decoration: none;
+    color: dimgrey;
+    font-size: 23px;
+    font-family: 'Bree Serif', serif;
+    
+}
 
 /* --- HEADER --- */
 
 #main-header {
-	background: white;
-	/*color: white;*/
-	height: 67px;
-    border-bottom: 1px solid yellowgreen;
     right: 0; /* or width: 100%*/
 	left: 0;
 	top: 0;
 	position: fixed;
+	background: white;
+	height: 67px;
+    border-bottom: 1px solid yellowgreen;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 #main-header a {
@@ -52,7 +125,6 @@ img {
 	float: left;
     margin-left: 30px;
     /*display: block;*/
-    line-height: 67px;
 }
 
 #logo-header-link {
@@ -60,84 +132,92 @@ img {
     font-family: 'Lobster', cursive;
     color: yellowgreen;
     transition: 0.6s;
+    line-height: 67px;
 }
 
 #logo-header-link:hover {
 	font-size: 26.2px;
 }
 
-/*
-#logo-header .site-name {
-    display: block;
-    font-weight: 700;
-    font-size: 1.2em;
-}
-
-#logo-header .site-desc {
-    display: block;
-    font-weight: 300;
-    font-size: 0.8em;
-    color: #999;
-}*/
-
 nav {
-	float: right;
-    font-size: 0; /* for the space between the items */
-    /*padding-right: 10px;*/
-}
-	
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    float: right;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0px 0px;
+
+#hamburger-menu {
+    float: right;
+    display:inline-block;
+    margin-right: 22px;
+}
+
+#hamburger-menu-link, #hamburger-menu-link:hover{
+    color: dimgrey;
+    font-size: 33px;
     line-height: 67px;
 }
 
-nav ul li a {
-    display: block;
-    padding: 0 10px;
-    text-decoration: none;
-    color: dimgrey;
-    font-size: 16px;
-    font-family: 'Bree Serif', serif;
+nav ul {
+    display: none;
 }
 
-nav ul li a:hover {
-    background: yellowgreen;
-    color: white;
-}
+/* Rules for tablets and bigger viewports */
+@media (min-width: 768px) {
+    
+    #hamburger-menu {
+        display: none;
+    }
+    
+    nav {
+        font-size: 0; /* for the space between the items */
+        /*padding-right: 10px;*/
+    }
 
-nav ul li #navbar-item-selected {
-    background: yellowgreen;
-    color: white;
-}
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 67px;
+        display: block;
+    }
 
-/* --- CONTENT --- */
+    nav ul li {
+        display: inline-block;
+        margin: 0px 0px;
+    }
 
-main {
-	background: white;
-	width: 90%;
-	max-width: 918px;
-	margin: 0px auto;
-	box-shadow: 0 0 10px rgba(0,0,0,.1);
-}
+    nav ul li a {
+        display: block;
+        padding: 0 10px;
+        text-decoration: none;
+        color: dimgrey;
+        font-size: 16px;
+        font-family: 'Bree Serif', serif;
+        transition: 0.15s;
+    }
 
-main #main-content {
-    padding: 25px 30px;
+    nav ul li a:hover {
+        background: yellowgreen;
+        color: white;
+    }
+
+    nav ul li #navbar-item-selected {
+        background: yellowgreen;
+        color: white;
+        /*border-left: 1px solid white;
+        border-right: 1px solid white;*/
+    }
 }
 
 /* --- FOOTER --- */
 
 #main-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 	background: #333;
 	color: white;
 	text-align: center;
-	padding: 10px;
+	padding: 6px;
     margin: 0;
 }
 
@@ -149,81 +229,10 @@ main #main-content {
     color: white;
 }
 
-#prueba {
+#logo-test {
     font-size: 200px;
     /*display: block;*/
     font-family: 'Lobster', cursive;
     color: yellowgreen;
     padding: 180px;
 }
-
-/*
-.navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    overflow: hidden;
-    background-color: white;
-    border-bottom: 1px solid yellowgreen;
-}
-
-.navbar-logo {
-    float: left;
-    margin-left: 30px;
-    margin-top: 17px;
-    margin-bottom: 17px;
-}
-
-.navbar-logo a:link {
-    text-decoration: none;
-    font-family: 'Lobster', cursive;
-    font-size: 25px;
-    color: yellowgreen;
-}
-
-.navbar-logo a:visited {
-    color: yellowgreen;
-}
-
-.navbar-logo a:hover {
-    font-size: 25.2px;
-}
-
-.navbar-item{
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    float: right;
-    line-height: 4;
-    font-size: 16.4px;
-    font-family: 'Bree Serif', serif;
-}
-
-.navbar-item a:link, .navbar-item a:visited {
-    text-decoration: none;
-    color: black;
-}
-
-.navbar-item:hover {
-    background-color: yellowgreen;
-}
-
-.navbar-item a:hover {
-    color: white;
-}
-
-.navbar-listitem:link {
-    text-decoration: none;
-    color: black;
-    font-size: 1.3em;
-}
-
-.navLink:hover{
-    font-size: 1.35em;
-}
-
-main{
-    margin: 30px;
-}*/
