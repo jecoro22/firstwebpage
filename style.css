@@ -1,64 +1,117 @@
+/*
+
+--- FONTS ---
+
+font-family: 'Slabo 27px', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Open Sans', Arial, sans-serif;
+font-family: 'Roboto', Arial, sans-serif;
+font-family: 'Arimo', Arial, sans-serif;
+font-family: 'Lobster', cursive;
+
+*/
+
 /* General CSS rules for every viewport, including smartphones */
 body{ }
 .title{ }
 .button{ }
 
 /* Rules for tablets and bigger viewports */
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     
 }
 
 /* Rules for laptops, small desktop screens and bigger viewports */
-@media screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
     
 }
 
 /* Rules for larger desktop screens only */
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     
 }
 
-/* --- GENERAL & CONTENT --- */
+/* --- GENERAL --- */
 
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', Arial, sans-serif;
 	color: #333;
-	font-size: 1em;
-	line-height: 1.5em;
-    position: relative;
+	font-size: 16px; /* 1em */
+    line-height: 1.25em;
     padding-top: 67px;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+}
+
 h1 {
-    font-family: 'Roboto', Arial, sans-serif;
-	font-size: 2.3em;
-	line-height: 1.2em;
-    margin: 0 0 0.5em 0;
-	font-weight: 300;
+	font-size: 2em;
+    line-height: 1.25em;
+    margin-bottom: 0.8em;
+	/*font-weight: 300;*/
 }
 
 h2 {
-    font-family: 'Roboto', Arial, sans-serif;
-	font-size: 1.6em;
-	line-height: 1.1em;
-    margin: 1em 0 0.5em 0;
+	font-size: 1.625em;
+    line-height: 1.15384615em;
+    margin-bottom: 0.8em;
 }
 
 h3 {
-    font-size: 1.3em;
-    margin: 1em 0 0.5em 0;
+    font-size: 1.375em;
+    line-height: 1.13636364em;
+    margin-bottom: 0.65em;
+    margin-top: 1em;
+    /*margin: 0.8em 0 0.5em 0;*/
+}
+
+h4 {
+    font-size: 1.125em;
+    line-height: 1.11111111em;
+    margin-bottom: 0.8em;
+    margin-top: 1em;
+    /*margin: 0.8em 0 0.5em 0;*/
 }
 
 p {
-    margin: 0 0 0.5em 0;
+    margin-bottom: 0.80em;
 }
 
 img {
 	width: auto;
 	height: auto;
-    margin: 0 0 0.5em 0;
+    margin-bottom: 0.8em;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        line-height: 1.375em;
+    }
+
+    h1 {
+        font-size: 3em;
+        line-height: 1.05em;
+    }
+
+    h2 {
+        font-size: 2.25em;
+        line-height: 1.25em;
+    }
+
+    h3 {
+        font-size: 1.75em;
+        line-height: 1.25em;
+    }
+
+    h4 {
+        font-size: 1.75em;
+        line-height: 1.22222222em;
+    }
 }
 
 .video-container {
@@ -66,7 +119,7 @@ img {
     padding-bottom: 56.25%;
 	height: 0;
     width: 100%;
-    margin: 0 0 0.5em 0;
+    margin-bottom: 0.8em;
     overflow: hidden;
 }
 
@@ -80,7 +133,7 @@ img {
     height: 100%;
 }
 
-@media screen and (min-width: 630px) {
+@media only screen and (min-width: 630px) {
     .video-container {
         position: static;
         padding-bottom: 0;
@@ -95,11 +148,13 @@ img {
     }
 }
 
+/* --- CONTENT --- */
+
 main #main-content {
-    padding: 25px 30px;
+    padding: 25px 25px 35px 25px;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     
     body {
         background: #f2f2f2;
@@ -115,7 +170,7 @@ main #main-content {
     }
 
     main #main-content {
-        padding: 25px 30px;
+        padding: 30px 30px 40px 30px;
     }
 }
 
@@ -125,18 +180,15 @@ main #main-content {
 }
 
 #menuList li {
-    margin: 30;
     padding: 17px;
     border-bottom: 1px solid dimgrey;
 }
 
 #menuList li a {
-    margin: 0px 0px;
     text-decoration: none;
     color: dimgrey;
     font-size: 23px;
-    font-family: 'Bree Serif', serif;
-    
+    font-family: 'Bree Serif', Palatino, serif;
 }
 
 /* --- HEADER --- */
@@ -179,7 +231,6 @@ nav {
     float: right;
 }
 
-
 #hamburger-menu {
     float: right;
     display:inline-block;
@@ -196,8 +247,7 @@ nav ul {
     display: none;
 }
 
-/* Rules for tablets and bigger viewports */
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     
     #hamburger-menu {
         display: none;
@@ -227,7 +277,7 @@ nav ul {
         text-decoration: none;
         color: dimgrey;
         font-size: 16px;
-        font-family: 'Bree Serif', serif;
+        font-family: 'Bree Serif', Palatino, serif;
         transition: 0.15s;
     }
 
