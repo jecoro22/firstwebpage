@@ -119,7 +119,7 @@ img {
     padding-bottom: 56.25%;
 	height: 0;
     width: 100%;
-    margin-bottom: 0.8em;
+    margin-bottom:0.8em;
     overflow: hidden;
 }
 
@@ -131,8 +131,11 @@ img {
     right: 0;
     width: 100%;
     height: 100%;
+    max-width: 640px;
+    max-height: 360px;
 }
 
+/*
 @media only screen and (min-width: 630px) {
     .video-container {
         position: static;
@@ -146,7 +149,7 @@ img {
         width: 560px;
         height: 315px;
     }
-}
+}*/
 
 /* --- CONTENT --- */
 
@@ -156,23 +159,30 @@ main #main-content {
 
 @media only screen and (min-width: 768px) {
     
+    main {
+        width: 90%;
+        max-width: 938px;
+        margin: 0px auto;
+    }
+
+    main #main-content {
+        padding: 40px 30px 40px 30px;
+        max-width: 750px;
+        margin: 0px auto;
+    }
+}
+
+/*
+@media only screen and (min-width: 992px) {
     body {
         background: #f2f2f2;
     }
     
-    main {
+     main {
         background: white;
-        width: 90%;
-        max-width: 938px;
-        min-width: 858px;
-        margin: 0px auto;
-        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        box-shadow: 0 0 20px rgba(0,0,0,.2);
     }
-
-    main #main-content {
-        padding: 30px 30px 40px 30px;
-    }
-}
+}*/
 
 #menuList {
     list-style: none;
@@ -201,7 +211,7 @@ main #main-content {
 	background: white;
 	height: 67px;
     border-bottom: 1px solid yellowgreen;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(154, 205, 50, 0.1);
     z-index: 111;
 }
 
@@ -211,7 +221,7 @@ main #main-content {
 
 #logo-header {
 	float: left;
-    margin-left: 30px;
+    margin-left: 44px;
     /*display: block;*/
 }
 
@@ -259,7 +269,7 @@ nav ul {
     }
 
     nav ul {
-        margin: 0;
+        margin: 0 20px 0 0;
         padding: 0;
         list-style: none;
         line-height: 67px;
@@ -294,7 +304,7 @@ nav ul {
     }
 }
 
-/* --- FOOTER --- */
+/* --- FOOTER ---
 
 #main-footer {
     position: relative;
@@ -312,3 +322,5 @@ nav ul {
 #main-footer a {
     color: white;
 }
+
+*/
