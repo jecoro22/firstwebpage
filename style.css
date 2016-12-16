@@ -116,7 +116,7 @@ img {
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; 
 	height: 0;
     width: 100%;
     margin-bottom:0.8em;
@@ -154,7 +154,7 @@ img {
 /* --- CONTENT --- */
 
 main #main-content {
-    padding: 25px 25px 35px 25px;
+    padding: 25px 30px 35px 30px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -172,7 +172,6 @@ main #main-content {
     }
 }
 
-/*
 @media only screen and (min-width: 992px) {
     body {
         background: #f2f2f2;
@@ -182,7 +181,7 @@ main #main-content {
         background: white;
         box-shadow: 0 0 20px rgba(0,0,0,.2);
     }
-}*/
+}
 
 #menuList {
     list-style: none;
@@ -209,6 +208,7 @@ main #main-content {
 	top: 0;
 	position: fixed;
 	background: white;
+    /*background: rgba(255, 255, 255, 0.95);*/
 	height: 67px;
     border-bottom: 1px solid yellowgreen;
     box-shadow: 0 0 10px rgba(154, 205, 50, 0.1);
