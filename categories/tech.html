@@ -11,6 +11,17 @@
   
 
 
+  <!-- Force HTTPS Start -->
+  <script>
+  // Don't force http when serving the website locally
+  if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+  </script>
+
+  <!-- Force HTTPS End -->
+
+
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,11 +38,12 @@
   <link href="/css/grayscale.css" rel="stylesheet">
   
 
+  <link rel="stylesheet" href="/css/rrssb.css" />
+
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/rrssb.css" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bree+Serif|Lobster|Open+Sans|Roboto|Merriweather|Oswald|Playfair+Display|Slabo+27px|Arimo|Roboto+Slab|Bitter" rel="stylesheet">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -131,7 +143,7 @@
 <!-- Navigation End -->
 
 
-    <section class="container content-section text-center">
+    <section class="container content-section text-center not-index">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
 
@@ -362,11 +374,11 @@
 
 <ul class="list-inline social-buttons">
     
-    <li><a href="https://facebook.com/jesus.copadorodriguez" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+    <li><a href="http://www.filmaffinity.com/en/userratings.php?user_id=426166&orderby=4" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
     
     <li><a href="https://linkedin.com/in/jesús-copado-rodr%C3%ADguez-a97603127" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
     
-    <li><a href="https://github.com/jesuscopado/" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+    <li><a href="https://github.com/jesuscopado" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
     
     
 </ul>
@@ -383,7 +395,7 @@
     </div>
 </footer>
 
-<p><br><br><br></p>
+<p><br><br></p>
 
 <!-- Footer End -->
 
@@ -415,6 +427,31 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
 
+  
+
+  <!-- Google Tracking Id Start -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Google Tracking Id End -->
+
+  
+
+
+
+
+  <!-- Disqus -->
+
+  
+
+  
 
 
 
@@ -425,7 +462,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 <script>
 function addTohistory() {
   if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, 'tech', 'http://localhost:4000/categories/tech.html');
+    history.pushState({}, 'tech', 'https://jesuscopado.github.io/categories/tech.html');
   }
 }
 </script>
