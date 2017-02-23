@@ -12,16 +12,11 @@
     
   
     
-      <url>
-        <loc>https://jesuscopado.github.io/blog/</loc>
-        
-          
-          
-          
-          <priority>1.0</priority>
-          
-        
-       </url>
+  
+    
+  
+    
+  
     
   
     
@@ -35,6 +30,29 @@
           
         
        </url>
+    
+  
+    
+      <url>
+        <loc>https://jesuscopado.github.io/blog/</loc>
+        
+          
+          
+          
+          <priority>1.0</priority>
+          
+        
+       </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -60,6 +78,82 @@
        </url>
     
   
+    
+      <url>
+        <loc>https://jesuscopado.github.io/blog/page2/</loc>
+        
+          
+          
+          
+          <priority>1.0</priority>
+          
+        
+       </url>
+    
+  
+  
+    <url>
+      <loc>https://jesuscopado.github.io/film/2017/02/19/best-trailer-of-the-week.html</loc>
+      
+        <lastmod>2017-02-19T00:00:00+01:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://jesuscopado.github.io/film/2017/02/17/top-10-movies-of-2016.html</loc>
+      
+        <lastmod>2017-02-17T00:00:00+01:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://jesuscopado.github.io/film/2017/02/12/what-the-f-film-genre.html</loc>
+      
+        <lastmod>2017-02-12T00:00:00+01:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://jesuscopado.github.io/self-improvement/2017/02/11/essencial-youtube-channels.html</loc>
+      
+        <lastmod>2017-02-11T00:00:00+01:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://jesuscopado.github.io/film/2017/02/10/my-favourites-movies.html</loc>
+      
+        <lastmod>2017-02-10T00:00:00+01:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://jesuscopado.github.io/self-improvement/2017/02/07/how-to-beat-procastination.html</loc>
+      
+        <lastmod>2017-02-07T00:00:00+01:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://jesuscopado.github.io/film/2017/02/05/science-fiction-of-ideas-film-genre.html</loc>
+      
+        <lastmod>2017-02-05T00:00:00+01:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
   
     <url>
       <loc>https://jesuscopado.github.io/test/2017/01/27/first.html</loc>
